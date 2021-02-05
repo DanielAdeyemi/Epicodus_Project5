@@ -10,8 +10,7 @@ export default class Age {
   }
 
   venusAge() {
-    //   const venAge = Math.floor(this.years * .62);
-    //   return venAge;
-    // }
+    const venAge = Math.floor(this.years * .62);
+    return venAge;
   }
 }
