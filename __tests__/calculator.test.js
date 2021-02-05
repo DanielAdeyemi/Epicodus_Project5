@@ -30,5 +30,9 @@ describe('Age', () => {
   test('should calculate how many years left to live for male user on Mercury', () => {
     const age = new Age(34, 'male');
     expect(age.mercuryAge()[1]).toEqual(10);
-  })
+  });
+  test('should calculate how many years left to live for male user on Mercury', () => {
+    const age = new Age(34, 'female');
+    expect(age.mercuryAge()[1]).toEqual(11);
+  });
 });
