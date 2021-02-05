@@ -21,7 +21,7 @@ describe('Age', () => {
   });
   test('should calculate age in Mars years', () => {
     const age = new Age(34);
-    expect(age.marsAge()).toEqual(63);
+    expect(age.marsAge()[0]).toEqual(63);
   });
   test('should calculate age in Juniper years', () => {
     const age = new Age(34);
@@ -48,5 +48,11 @@ describe('Age', () => {
   test('should calculate how many years lived over life expectancy on Venus', () => {
     const age = new Age(81, 'male');
     expect(age.venusAge()[1]).toEqual(3);
+  });
+  test('should calculate how many years left to live for male or female user on Mars', () => {
+    const age1 = new Age(34, 'male');
+    const age2 = new Age(34, 'female');
+    expect(age1.marsAge()[1]).toEqual(78);
+    expect(age2.marsAge()[1]).toEqual(86);
   });
 });
