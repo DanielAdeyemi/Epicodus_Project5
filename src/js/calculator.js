@@ -13,7 +13,8 @@ export default class Age {
 
   venusAge() {
     const venAge = Math.trunc(this.years * .62);
-    const venLeft = Math.trunc(this.expect * .62);
+    const venLeft = (Math.trunc(this.expect * .62) < 0) ? (-(Math.trunc(this.expect * .62))) :
+      (Math.trunc(this.expect * .62));
     return [venAge, venLeft];
   }
 
