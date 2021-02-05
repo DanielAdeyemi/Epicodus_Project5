@@ -5,7 +5,7 @@ import '.././css/styles.css';
 import Age from './calculator.js';
 
 
-$('form').submit(function(event1) {
+$('.btn').click(function(event1) {
   event1.preventDefault();
   const age = $('#age').val();
   const gender = $('#gender').val();
@@ -13,5 +13,13 @@ $('form').submit(function(event1) {
     alert(`We can't calculate your age just yet!`);
   }
   let spaceAge = new Age(age, gender);
-  $('#output').text(`${spaceAge.years}, ${spaceAge.expect}`);
+  $('form').hide();
+  $('#output').show();
+
+  $('#again').click(function(event2) {
+    event2.preventDefault();
+    $('#output').hide();
+    $('form')[0].reset();
+    $('form').show();
+  });
 });
