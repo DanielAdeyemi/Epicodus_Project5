@@ -5,23 +5,24 @@ export default class Age {
   }
 
   mercuryAge() {
-    const mercAge = Math.floor(this.years * .24);
-    const mercLeft = Math.floor(this.expect * .24);
+    const mercAge = Math.trunc(this.years * .24);
+    const mercLeft = (Math.trunc(this.expect * .24) < 0) ? (-(Math.trunc(this.expect * .24))) :
+      (Math.trunc(this.expect * .24));
     return [mercAge, mercLeft];
   }
 
   venusAge() {
-    const venAge = Math.floor(this.years * .62);
+    const venAge = Math.trunc(this.years * .62);
     return [venAge];
   }
 
   marsAge() {
-    const marAge = Math.floor(this.years * 1.88);
+    const marAge = Math.trunc(this.years * 1.88);
     return marAge;
   }
 
   juniperAge() {
-    const junAge = Math.floor(this.years * 11.86);
+    const junAge = Math.trunc(this.years * 11.86);
     return junAge;
   }
 }
