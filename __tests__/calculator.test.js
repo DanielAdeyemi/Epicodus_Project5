@@ -65,4 +65,8 @@ describe('Age', () => {
     expect(age1.juniperAge()[1]).toEqual(498);
     expect(age2.juniperAge()[1]).toEqual(545);
   });
+  test('should calculate how many years lived over life expectancy on Juniper', () => {
+    const age = new Age(81, 'male');
+    expect(age.juniperAge()[1]).toEqual(59);
+  });
 });
