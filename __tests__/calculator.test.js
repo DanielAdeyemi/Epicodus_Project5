@@ -44,5 +44,5 @@ describe('Age', () => {
     const age2 = new Age(34, 'female');
     expect(age1.venusAge()[1]).toEqual(26);
     expect(age2.venusAge()[1]).toEqual(28);
-  })
+  });
 });
