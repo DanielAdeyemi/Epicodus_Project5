@@ -14,5 +14,8 @@ export default class Age {
     return venAge;
   }
 
-  marsAge() {}
+  marsAge() {
+    const marAge = Math.floor(this.years * 1.88);
+    return marAge;
+  }
 }
