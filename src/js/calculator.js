@@ -6,7 +6,8 @@ export default class Age {
 
   mercuryAge() {
     const mercAge = Math.floor(this.years * .24);
-    return mercAge;
+    // const mercLeft = Math.floor(this.expect * .24);
+    return [mercAge];
   }
 
   venusAge() {
