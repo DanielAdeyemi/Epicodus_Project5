@@ -7,10 +7,13 @@ ___
 ***Ever wondered how old are you on different planets? Well, it's time to find out by using our Galactic Age Calculator***
 ### This web page will determines a male user's age based on a planet's solar years (Mercury, Venus, Mars, Jupiter) and also calculate life expectancy on these planets based on gender.
 
+## *Whiteboard of Business Logic*
+![img](src/assets/wb_project5.png)
+
 ## *Specs*
     
 |  Details| Input  | Output  |  
-|:---:|:---:|:---|
+|:---|:---:|:---:|
 |   **Earth(constractor)** | 
 |  Should create a object with determined parameters |'Daniel, male, 34'  | 'Daniel, 42, 34' | 
 |  Should create a object with determined parameters |'Amy, female, 34'  | 'Amy, 46, 34' | 
