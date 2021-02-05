@@ -20,7 +20,7 @@ export default class Age {
 
   marsAge() {
     const marAge = Math.trunc(this.years * 1.88);
-    const marLeft = (Math.trunc(this.expect * 1.88))
+    const marLeft = (Math.trunc(this.expect * 1.88));
     return [marAge, marLeft];
   }
 
