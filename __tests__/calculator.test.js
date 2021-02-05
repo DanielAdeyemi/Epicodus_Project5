@@ -45,4 +45,8 @@ describe('Age', () => {
     expect(age1.venusAge()[1]).toEqual(26);
     expect(age2.venusAge()[1]).toEqual(28);
   });
+  test('should calculate how many years lived over life expectancy on Venus', () => {
+    const age = new Age(81, 'male');
+    expect(age.venusAge()[1]).toEqual(3);
+  });
 });
