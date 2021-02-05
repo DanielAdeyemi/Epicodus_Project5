@@ -5,6 +5,7 @@ export default class Age {
   }
 
   mercuryAge() {
-
+    const age = Math.floor(this.years * .24);
+    return age;
   }
 }
