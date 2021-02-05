@@ -18,4 +18,6 @@ export default class Age {
     const marAge = Math.floor(this.years * 1.88);
     return marAge;
   }
+
+  juniperAge() {}
 }

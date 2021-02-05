@@ -23,4 +23,8 @@ describe('Age', () => {
     const age = new Age(34);
     expect(age.marsAge()).toEqual(63);
   });
+  test('should calculate age in Juniper years', () => {
+    const age = new Age(34);
+    expect(age.juniperAge()).toEqual(403);
+  });
 });
