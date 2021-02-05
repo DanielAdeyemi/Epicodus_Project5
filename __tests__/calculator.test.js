@@ -27,7 +27,7 @@ describe('Age', () => {
     const age = new Age(34);
     expect(age.juniperAge()).toEqual(403);
   });
-  test('should calculate how many years left to live for user on Mercury', () => {
+  test('should calculate how many years left to live for male user on Mercury', () => {
     const age = new Age(34, 'male');
     expect(age.mercuryAge()[1]).toEqual(10);
   })
