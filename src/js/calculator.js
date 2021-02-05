@@ -13,7 +13,8 @@ export default class Age {
 
   venusAge() {
     const venAge = Math.trunc(this.years * .62);
-    return [venAge];
+    const venLeft = Math.trunc(this.expect * .62);
+    return [venAge, venLeft];
   }
 
   marsAge() {

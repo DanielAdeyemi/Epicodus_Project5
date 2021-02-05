@@ -39,4 +39,10 @@ describe('Age', () => {
     const age = new Age(81, 'male');
     expect(age.mercuryAge()[1]).toEqual(1);
   });
+  test('should calculate how many years left to live for male or female user on Venus', () => {
+    const age1 = new Age(34, 'male');
+    const age2 = new Age(34, 'female');
+    expect(age1.venusAge()[1]).toEqual(26);
+    expect(age2.venusAge()[1]).toEqual(28);
+  })
 });
