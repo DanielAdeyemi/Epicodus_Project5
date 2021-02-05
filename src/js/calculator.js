@@ -5,7 +5,13 @@ export default class Age {
   }
 
   mercuryAge() {
-    const age = Math.floor(this.years * .24);
-    return age;
+    const mercAge = Math.floor(this.years * .24);
+    return mercAge;
+  }
+
+  venusAge() {
+    //   const venAge = Math.floor(this.years * .62);
+    //   return venAge;
+    // }
   }
 }

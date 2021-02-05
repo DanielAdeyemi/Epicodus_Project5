@@ -15,4 +15,8 @@ describe('Age', () => {
     const age = new Age(34, 'male');
     expect(age.mercuryAge()).toEqual(8);
   });
+  test('should calculate age in Venus years', () => {
+    const age = new Age(34)
+    expect(age.venusAge()).toEqual(21);
+  });
 });
