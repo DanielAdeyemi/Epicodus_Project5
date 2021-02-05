@@ -4,7 +4,7 @@ export default class Age {
     this.expect = (gender === 'male') ? (76 - age) : (80 - age);
   }
 
+  mercuryAge() {
+
+  }
 }
-//   mercuryAge() {
-//     const age = this.years * .24
-//   }
