@@ -55,4 +55,8 @@ describe('Age', () => {
     expect(age1.marsAge()[1]).toEqual(78);
     expect(age2.marsAge()[1]).toEqual(86);
   });
+  test('should calculate how many years lived over life expectancy on Mars', () => {
+    const age = new Age(81, 'male');
+    expect(age.marsAge()[1]).toEqual(9);
+  });
 });
