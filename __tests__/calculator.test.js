@@ -12,11 +12,15 @@ describe('Age', () => {
     expect(age.expect).toEqual(46);
   });
   test('should calculate age in Mercury years', () => {
-    const age = new Age(34, 'male');
+    const age = new Age(34);
     expect(age.mercuryAge()).toEqual(8);
   });
   test('should calculate age in Venus years', () => {
     const age = new Age(34)
     expect(age.venusAge()).toEqual(21);
+  });
+  test('should calculate age in Mars years', () => {
+    const age = new Age(34);
+    expect(age.marsAge()).toEqual(63);
   });
 });

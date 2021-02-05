@@ -13,4 +13,6 @@ export default class Age {
     const venAge = Math.floor(this.years * .62);
     return venAge;
   }
+
+  marsAge() {}
 }
