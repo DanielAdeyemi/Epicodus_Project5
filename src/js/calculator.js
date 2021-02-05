@@ -27,6 +27,7 @@ export default class Age {
 
   juniperAge() {
     const junAge = Math.trunc(this.years * 11.86);
-    return junAge;
+    const junLeft = 0;
+    return [junAge, junLeft];
   }
 }
