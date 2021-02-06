@@ -5,7 +5,7 @@ ___
 
 ## *Description*:    
 ***Ever wondered how old are you on different planets? Well, it's time to find out by using our Galactic Age Calculator***
-### This web page will determines a male user's age based on a planet's solar years (Mercury, Venus, Mars, Jupiter) and also calculate life expectancy on these planets based on gender.
+### This web page will determines a male user's age based on a planet's solar years (Mercury, Venus, Mars, Jupiter) and also calculate life expectancy on these planets based on gender. Average life expectancy being used: male - 76, female - 81 (*according to 2020 statistics in USA*)
 
 ## *Whiteboard of Business Logic*
 ![img](src/assets/wb_project5.png)
@@ -15,38 +15,38 @@ ___
 |  Details| Input  | Output  |  
 |:---|:---:|:---:|
 |   **Earth(constractor)** | 
-|  Should create a object with determined parameters |'Daniel, male, 34'  | 'Daniel, 42, 34' | 
-|  Should create a object with determined parameters |'Amy, female, 34'  | 'Amy, 46, 34' | 
+|  Should create a object with determined parameters |'Daniel, male, 34'  | 'Daniel, 42, 34' ✅ |   
+|  Should create a object with determined parameters |'Amy, female, 34'  | 'Amy, 46, 34' ✅  |    
 |   **Mercury** | 
-|  Should calculate age in Mercury years | 34 | 8 | 
+|  Should calculate age in Mercury years | 34 | 8 ✅ | 
 |   **Venus** | 
-|  Should calculate age in Venus years | 34 | 21 | 
+|  Should calculate age in Venus years | 34 | 21 ✅ | 
 |   **Mars** | 
-|  Should calculate age in Mars years | 34 | 63 | 
+|  Should calculate age in Mars years | 34 | 63 ✅ | 
 |   **Juniper** | 
-|  Should calculate age in Juniper years | 34 | 403 | 
+|  Should calculate age in Juniper years | 34 | 403 ✅  | 
 |  **Mercury Life Expectancy** | 
-|  Should calculate how many years left to live for male user on Mercury  | 34, male | 10 | 
-|  Should calculate how many years left to live for female user on Mercury  | 34, female | 11 | 
-|  Should calculate how many years lived over life expectancy on Mercury  | 81, male | 1 | 
+|  Should calculate how many years left to live for male user on Mercury  | 34, male | 10 ✅ | 
+|  Should calculate how many years left to live for female user on Mercury  | 34, female | 11 ✅ | 
+|  Should calculate how many years lived over life expectancy on Mercury  | 81, male | 1 ✅ | 
 |  **Venus Life Expectancy** | 
-|  Should calculate how many years left to live for male user on Venus  | 34, male | 26 | 
-|  Should calculate how many years left to live for female user on Venus  | 34, female | 28 | 
-|  Should calculate how many years lived over life expectancy on Venus | 81, male | 3 | 
+|  Should calculate how many years left to live for male user on Venus  | 34, male | 26 ✅ | 
+|  Should calculate how many years left to live for female user on Venus  | 34, female | 28 ✅ | 
+|  Should calculate how many years lived over life expectancy on Venus | 81, male | 3 ✅ | 
 |  **Mars Life Expectancy** | 
-|  Should calculate how many years left to live for male user on Mars  | 34, male | 78 | 
-|  Should calculate how many years left to live for female user on Mars  | 34, female | 86 | 
-|  Should calculate how many years lived over life expectancy on Mars  | 81, male | 9 | 
+|  Should calculate how many years left to live for male user on Mars  | 34, male | 78 ✅ | 
+|  Should calculate how many years left to live for female user on Mars  | 34, female | 86 ✅ | 
+|  Should calculate how many years lived over life expectancy on Mars  | 81, male | 9 ✅ | 
 |  **Juniper Life Expectancy** | 
-|  Should calculate how many years left to live for male user on Juniper  | 34, male | 498 |
-|  Should calculate how many years left to live for female user on Juniper  | 34, female | 545 |  
-|  Should calculate how many years lived over life expectancy on Mercury  | 81, male | 59 | 
+|  Should calculate how many years left to live for male user on Juniper  | 34, male | 498 ✅ |
+|  Should calculate how many years left to live for female user on Juniper  | 34, female | 545 ✅ |  
+|  Should calculate how many years lived over life expectancy on Mercury  | 81, male | 59 ✅ | 
 
 ***
 ## *Setup instructions:*
 #### From the web:
 * Go to my GitHub repository, using following [URL](https://github.com/DanielAdeyemi/Epicodus_Project5.git).
-* Click the "Code" and click the 'Download zip' option.
+* Click the "Code" ![img](src/assets/code.png) and click the 'Download zip' option ![img](src/assets/zip.png).
 * Unzip the file, navigate to the `src` directory.
 * open ***'index.html' or any interesting for you file*** to see code.
 #### From the terminal: 
