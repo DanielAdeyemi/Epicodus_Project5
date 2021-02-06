@@ -47,13 +47,13 @@ ___
 #### From the web:
 * Go to my GitHub repository, using following [URL](https://github.com/DanielAdeyemi/Epicodus_Project5.git).
 * Click the "Code" and click the 'Download zip' option.
-* Unzip the file, navigate to the root directory.
-* open ***'index.html'*** file with your web browser.
+* Unzip the file, navigate to the `src` directory.
+* open ***'index.html' or any interesting for you file*** to see code.
 #### From the terminal: 
 * Clone my repository from GitHub using `git clone https://github.com/DanielAdeyemi/Epicodus_Project5.git`
 * Navigate to the downloaded folder using ***cd*** command
 * Execute **code .** command in your terminal and it will open all source code in your code editor.    
-*Note: please, make sure that you are inside project directory!*
+*Note: to run this project locally you will need to have Node. After you cloned and open repository - execute `npm install` in command line to gain access to webpack*
 #### GitHub pages:
 *GitHub page is unavailable for this project*
 
@@ -64,7 +64,9 @@ ___
 * JQuery
 * Bootstrap *v5.0.0 beta*
 * Git and GitHub
- * Jest
+* Jest
+* Webpack
+* npm
 
 ## *Known bugs:*
 This project has almost no style and was used to demonstrate my understanding of TDD and Enviroments in JavaScript.
