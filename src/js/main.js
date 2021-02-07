@@ -17,12 +17,48 @@ $('.btn').click(function(event1) {
   }
   let spaceAge = new Age(age, gender);
 
-  if (clk === 'Earth') {
-    $('.card-title').text(`${clk}`);
-    $('.card-text').html(`<p>${name}, you are ${spaceAge.years} years old on ${clk}</p>
-    <p>Approximate time left to live for you - ${spaceAge.expect} years`);
-  } else {
-    alert("later");
+  $('.card-title').text(`${clk}`);
+  switch (true) {
+    case (clk === 'Earth' && spaceAge.expect >= 0):
+      $('.card-text').html(`<p>${name}, you are ${spaceAge.years} years old on ${clk}</p>
+        <p>Approximate time left to live for you - ${spaceAge.expect} year(s)`);
+      break;
+    case (clk === 'Earth' && spaceAge.expect < 0):
+      $('.card-text').html(`<p>${name}, you are ${spaceAge.years} years old on ${clk}</p>
+        <p>You overlived your average expectancy by ${-spaceAge.expect} year(s).`);
+      break;
+    case (clk === 'Mercury' && spaceAge.expect >= 0):
+      $('.card-text').html(`<p>${name}, you are ${spaceAge.mercuryAge()[0]} years old on ${clk}</p>
+          <p>Approximate time left to live for you - ${spaceAge.mercuryAge()[1]} year(s)`);
+      break;
+    case (clk === 'Mercury' && spaceAge.expect < 0):
+      $('.card-text').html(`<p>${name}, you are ${spaceAge.mercuryAge()[0]} years old on ${clk}</p>
+        <p>You overlived your average expectancy by ${spaceAge.mercuryAge()[1]} year(s).`);
+      break;
+    case (clk === 'Venus' && spaceAge.expect >= 0):
+      $('.card-text').html(`<p>${name}, you are ${spaceAge.venusAge()[0]} years old on ${clk}</p>
+            <p>Approximate time left to live for you - ${spaceAge.venusAge()[1]} year(s)`);
+      break;
+    case (clk === 'Venus' && spaceAge.expect < 0):
+      $('.card-text').html(`<p>${name}, you are ${spaceAge.venusAge()[0]} years old on ${clk}</p>
+          <p>You overlived your average expectancy by ${spaceAge.venusAge()[1]} year(s).`);
+      break;
+    case (clk === 'Mars' && spaceAge.expect >= 0):
+      $('.card-text').html(`<p>${name}, you are ${spaceAge.marsAge()[0]} years old on ${clk}</p>
+            <p>Approximate time left to live for you - ${spaceAge.marsAge()[1]} year(s)`);
+      break;
+    case (clk === 'Mars' && spaceAge.expect < 0):
+      $('.card-text').html(`<p>${name}, you are ${spaceAge.marsAge()[0]} years old on ${clk}</p>
+          <p>You overlived your average expectancy by ${spaceAge.marsAge()[1]} year(s).`);
+      break;
+    case (clk === 'Jupiter' && spaceAge.expect >= 0):
+      $('.card-text').html(`<p>${name}, you are ${spaceAge.juniperAge()[0]} years old on ${clk}</p>
+            <p>Approximate time left to live for you - ${spaceAge.juniperAge()[1]} year(s)`);
+      break;
+    case (clk === 'Jupiter' && spaceAge.expect < 0):
+      $('.card-text').html(`<p>${name}, you are ${spaceAge.juniperAge()[0]} years old on ${clk}</p>
+          <p>You overlived your average expectancy by ${spaceAge.juniperAge()[1]} year(s).`);
+      break;
   }
   $('form').hide();
   $('#output').show();
