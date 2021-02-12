@@ -5,13 +5,13 @@ ___
 
 ## *Description*:    
 ***Ever wondered how old are you on different planets? Well, it's time to find out by using our Galactic Age Calculator***
-### This web page will determines a male user's age based on a planet's solar years (Mercury, Venus, Mars, Jupiter) and also calculate life expectancy on these planets based on gender. Average life expectancy being used: male - 76, female - 81 (*according to 2020 statistics in USA*)
+### This web page will determines user's age based on a planet's solar years (Mercury, Venus, Mars, Jupiter) and also calculate life expectancy on these planets based on gender. Average life expectancy being used: male - 76, female - 81 (*according to 2020 statistics in USA*)
 
 ## *Whiteboard of Business Logic*
 ![img](src/assets/wb_project5.png)
 
 ## *Specs*
-    
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)    
 |  Details| Input  | Output  |  
 |:---|:---:|:---:|
 |   **Earth(constractor)** | 
@@ -41,6 +41,11 @@ ___
 |  Should calculate how many years left to live for male user on Juniper  | 34, male | 498 ✅ |
 |  Should calculate how many years left to live for female user on Juniper  | 34, female | 545 ✅ |  
 |  Should calculate how many years lived over life expectancy on Mercury  | 81, male | 59 ✅ | 
+
+## *Running tests from your terminal using Jest and webpack:*
+* make sure you have Jest installed, if not, use [this link](https://www.learnhowtoprogram.com/intermediate-javascript/test-driven-development-and-environments-with-javascript/setting-up-jest) to install it on your machine **(also make sure you are in head directory of this project)**
+* now from main directory run `$ npm run test` to check if tests from `__test__` directory pass or fail. 
+* *(Note: this project has 100% line coverage for business logic with Jest)*
 
 ***
 ## *Setup instructions:*
